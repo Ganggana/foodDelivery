@@ -6,7 +6,7 @@ import { styled } from "@mui/material/styles";
 import { Grid } from "@mui/material";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import PersonIcon from "@mui/icons-material/Person";
-
+import { Input as BaseInput } from "@mui/base/Input";
 export const Header = () => {
   return (
     <Stack
@@ -47,7 +47,8 @@ export const Header = () => {
           justifyContent: "space-between",
         }}
       >
-        <input type="text" placeholder="хайх" width={502} height={80} />
+        {" "}
+        <BaseInput aria-label="Demo input  " placeholder="Хайх" />
         <Box>
           <ShoppingBasketIcon />
           НҮҮР
